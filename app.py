@@ -28,6 +28,11 @@ def omikuji():
     return f"今日の運勢は...{fortune}です！"
 
 
+@app.route("/user/<username>")
+def greet(username):
+    return f"Hi {username}"
+
+
 if __name__ == '__main__':
     app.run(debug=True)
 
