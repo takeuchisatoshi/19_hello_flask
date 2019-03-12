@@ -1,23 +1,23 @@
 import random
 
-
 from flask import Flask
 
 app = Flask(__name__)
+
 
 @app.route("/")
 def hello_world():
     return "<html>Hi, Hachimantai!</html>"
 
 
-@app.route("/hachimantai")
-def hello_hachimantai():
-    return "<html>スパルタキャンプ in 八幡平</html>"
-
-
 @app.route("/goodbye")
 def goodbye():
     return "<html>Good Bye!</html>"
+
+
+@app.route("/hachimantai")
+def hello_hachimantai():
+    return "<html>スパルタキャンプ in 八幡平</html>"
 
 
 @app.route("/omikuji")
